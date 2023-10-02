@@ -5,13 +5,12 @@ import desktop from "./desktop.svg";
 import tooltip from "./Tooltip.svg";
 import camera from "./camera.svg";
 import "./Header.css";
-import { useState } from 'react';
 import '../../pages/Index/Index.css'
-import gif from '../../components/Header/welcome.gif'
+
 
 
 const Header = () => {
-  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <div className="app">
       <img src={tooltip} id="tooltip" alt="share-btn" />
@@ -22,13 +21,7 @@ const Header = () => {
       <img src={camera} id="camera" alt="my-img" />
 
       <p>
-        <b  className="tooltip-container"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}>   {isHovered && (
-        <div className="tooltip">
-          <img src={gif} className='img' alt="GIF" />
-        </div>
-      )} 
+        <b>
       Qaasim Umar</b>
       </p>
     </div>
