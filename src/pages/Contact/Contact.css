@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+.contact-card {
+  padding: 0 2rem;
+  max-width: 1030px;
+  margin: 0 auto;
+  height: auto;
+
+  font-family: "Inter";
+}
+
+.form-card {
+  max-width: 720px;
+  margin: 5rem auto;
+}
+
+.contact-card .paragraph {
+  font-size: 20px;
+  color: #475467;
+  margin-bottom: 3rem;
+  line-height: 30px;
+}
+.contact-card h1 {
+  color: #101828;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+}
+label {
+  display: block;
+  color: #344054;
+  font-size: 14px;
+}
+.name-card {
+  display: flex;
+ 
+  gap: 1.5rem;
+  /* flex-wrap: wrap; */
+}
+.checkbox p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #475467;
+}
+.name{
+  flex: 1 1 auto;
+}
+.lastname{
+  flex: 1 1 auto;
+}
+  /* ::placeholder {
+    vertical-align: text-top;
+  }  */
+
+#first_name,
+#last_name {
+  padding: 10px 14px;
+  margin-top: 5px;
+  width: 100%;
+  height: 44px;
+  background: #ffffff;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+
+input:focus{
+  outline: none;
+  border: 1px solid #84CAFF;
+}
+
+#email {
+  padding: 10px 14px;
+  margin-top: 5px;
+  width: 100%;
+  height: 44px;
+
+  background: #ffffff;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+.email {
+  margin: 1rem 0;
+}
+
+#message {
+  padding: 12px 14px;
+  margin-top: 1rem;
+  width: 100%;
+  height: 132px;
+  background: #ffffff;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+
+input[type="checkbox"] {
+  visibility: hidden;
+}
+.checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+#tick {
+  position: absolute;
+
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+}
+
+.checkbox:hover input ~ #tick {
+  box-shadow: 0px 0px 0px 4px #d1e9ff;
+}
+#tick:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checkbox input:checked ~ #tick {
+  border: 1.5px solid #1570ef;
+}
+.checkbox input:checked ~ #tick:after {
+  display: block;
+}
+.checkbox #tick:after {
+  left: 4px;
+  bottom: 3px;
+  width: 4px;
+  height: 9px;
+  border: 2px solid #1570ef;
+  border-width: 0 4px 4px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#btn__submit {
+  width: 100%;
+  height: 48px;
+  color: white;
+  background: #175CD3;
+  border: 1px solid #1570ef;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+
+#btn__submit:hover{
+  background: #1570EF;
+}
+
+#btn__submit:disabled
+{
+
+}
+
+@media only screen and (max-width: 600px) {
+  .name-card {
+    flex-direction: column;
+  }
+
+  #first_name,
+  #last_name {
+    width: 100%;
+  }
+
+  #contact-footer{
+    padding: 1.5rem 0;
+  }
+
+  .paragraph{
+    font-size: 18px;
+  }
+  .agreement{
+    font-size: 16px;
+  }
+}

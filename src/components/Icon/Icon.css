@@ -1,0 +1,11 @@
+.icons{
+    padding: 1rem;
+border-radius: .3rem;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.icon{
+    padding: .5rem;
+}

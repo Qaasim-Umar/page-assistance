@@ -1,0 +1,28 @@
+.footer{
+    border-top: 1px solid #667085 ;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.credit{
+    color: #667085;
+    font-size: 1rem;
+
+}
+.zuri{
+width: 11.57rem;
+height: 1.55rem;
+}
+.i4g{
+    width:8.26rem;
+    height: 2rem;
+}
+
+@media screen and (max-width:600px) {
+
+    .footer{
+        flex-direction: column;
+        
+    }
+}

@@ -1,0 +1,23 @@
+#slack {
+    display: none;
+  }
+
+  .tooltip-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .tooltip {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    z-index: 1;
+  }
+
+  .img{
+    width:8rem;
+  }
+  
