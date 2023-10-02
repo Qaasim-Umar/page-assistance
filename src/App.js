@@ -3,7 +3,7 @@ import "./App.css";
 
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Index from "./pages/Index/Index";
-import Contact from "./pages/Contact/Contact";
+
 
 function App() {
   return (
@@ -11,7 +11,6 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/Contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </div>
